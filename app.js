@@ -19,6 +19,7 @@ function randomNumber() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".container").style.backgroundColor = colorRGBGenerator()
-  color.textContent = colorRGBGenerator()
+  let rgbColor = colorRGBGenerator()
+  document.querySelector(".container").style.backgroundColor = rgbColor
+  color.textContent = rgbColor
 })
