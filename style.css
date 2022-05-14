@@ -1,0 +1,85 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__bar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 16px;
+  color: #49a6e9;
+  letter-spacing: 4px;
+}
+
+.nav__links {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.nav__links li a {
+  text-decoration: none; 
+  color: #063251;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.nav__links li a:hover {
+  color: #49a6e9;
+}
+
+.container {
+  display: grid;
+  height: calc(100vh - 50px);
+  place-content: center;
+  grid-template-rows: repeat(2, 100px);
+  background-color: #f1f5f8;
+}
+
+.color {
+  color: #49a6e9;
+}
+
+.content {
+  align-self: center;
+  font-size: 34px;
+  background-color: #222;
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.btn {
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  font-size: 22px;
+  padding: 10px 16px;
+  justify-self: center;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #222;
+  border-color: #222;
+  transition: all 0.4s ease;
+} 
+
+.btn:hover {
+  background-color: #222;
+  color: #fff;
+}
