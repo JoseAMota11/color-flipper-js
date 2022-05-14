@@ -3,8 +3,9 @@ const btn = document.querySelector("#btn")
 const color = document.querySelector(".color")
 
 btn.addEventListener("click", () => {
-  document.querySelector(".container").style.backgroundColor = colorHexGenerator()
-  color.textContent = colorHexGenerator()
+  let hexColor = colorHexGenerator()
+  document.querySelector(".container").style.backgroundColor = hexColor
+  color.textContent = hexColor
 })
 
 function colorHexGenerator() {
